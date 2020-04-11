@@ -15,7 +15,7 @@ trait  ExceptionTrait{
             return $this->HttpResponse() ;
         }
 
-        return parent::render($request, $e) ;
+        return parent::render($request, $e) ; 
     }
 
     public function isModel($e){
