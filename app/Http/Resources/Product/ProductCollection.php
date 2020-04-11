@@ -6,6 +6,9 @@ use Illuminate\Http\Resources\Json\Resource;
 
 class ProductCollection extends Resource
 {
+    public function __construct(){
+        $this->middleware('auth:api')->except('index','show') ;
+    }
     /**
      * Transform the resource collection into an array.
      *
